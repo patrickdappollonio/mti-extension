@@ -1,0 +1,13 @@
+<html>
+<head>
+</head>
+<body width="150" height="150">
+	<script>
+	var tablink;
+	chrome.tabs.getSelected(null,function(tab) { showqr(tab.url); });
+	function showqr(url) {
+		document.write('<img src="http://chart.apis.google.com/chart?cht=qr&chs=150x150&chl='+url+'&chld=H|0" width="150" height="150" />');
+	}
+	</script>
+</body>
+</html>

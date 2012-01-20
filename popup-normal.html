@@ -1,0 +1,15 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function saludo() {
+			var nombre = document.getElementById('nombre').value;
+			document.getElementById('message').innerHTML = "Hola, <strong><em>"+nombre+"</em></strong>. Bienvenido al curso de Extensiones en Chrome.";
+		}
+	</script>
+</head>
+<body style="width: 260px; height: 200px;">
+	<div id="message">
+		Ingresa tu nombre: <input type="text" id="nombre"><input type="button" onclick="saludo()" value="Ok!">
+	</div>
+</body>
+</html>
